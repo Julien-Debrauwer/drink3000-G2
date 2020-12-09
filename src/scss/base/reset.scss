@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body, ul, ol, li, p, address, blockquote, figure, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+a{
+  outline: none;
+}
+
+li{
+  list-style-type: none;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+

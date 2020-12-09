@@ -1,0 +1,17 @@
+
+@import "src/scss/base/normalize";
+@import "src/scss/base/reset";
+@import "src/scss/base/variables";
+@import "src/scss/base/mixins";
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import "src/scss/base/fonts";
+@import "src/scss/base/base";
+
+@import "src/scss/components/header";
+@import "src/scss/components/recipes";
+@import "src/scss/components/references";
+@import "src/scss/components/slider";
+@import "src/scss/components/footer";
+
+
+
