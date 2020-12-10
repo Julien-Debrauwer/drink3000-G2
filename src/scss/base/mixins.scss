@@ -1,1 +1,8 @@
 // mixins
+
+@mixin drinks-card($bgclr) {
+    background-color: $bgclr;
+    border-radius: .6rem;
+    color: white;
+    padding: .8rem 1rem;
+}
