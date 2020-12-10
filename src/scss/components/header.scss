@@ -1,45 +1,45 @@
 header {
-    .navbar {
-        background: transparent;
-        color: white;
+  .navbar {
+    background: transparent;
+    color: white;
 
-        .container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .title {
-            font-size: 2.25rem;
-        }
+    .container {
+      display: flex;
+      justify-content: center;
     }
 
-    .video {
-        height: 100%;
+    .title {
+      font-size: 2.25rem;
+    }
+  }
+
+  .video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+    &-container {
+      position: relative;
+      height: 90vh;
+      width: 100%;
+
+      &-title {
+        position: absolute;
         width: 100%;
-        object-fit: cover;
+        bottom: 50%;
 
-        &-container {
-            position: relative;
-            height: 90vh;
-            width: 100%;
+        font-size: 3rem;
+        text-align: center;
+        color: white;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
 
-            &-title {
-                position: absolute;
-                width: 100%;
-                bottom: 50%;
-
-                font-size: 3rem;
-                text-align: center;
-                color: white;
-                font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-            }
-
-            &-bottomarrow {
-                position: absolute;
-                width: 100%;
-            }
-        }
+      &-bottomarrow {
+        position: absolute;
+        width: 100%;
+      }
     }
+  }
 }
 
 // @media screen and (min-width: 768px) {
