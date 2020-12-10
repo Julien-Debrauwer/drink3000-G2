@@ -3,7 +3,7 @@ header {
         background: transparent;
         color: white;
 
-        .container {
+        .container-center {
             display: flex;
             justify-content: center;
         }
@@ -42,12 +42,34 @@ header {
     }
 }
 
-// @media screen and (min-width: 768px) {
-//     header {
-//         .video {
-//             &-container {
-//                 height: 90vh;
-//             }
-//         }
-//     }
-// }
+.hidden {
+    display: none;
+}
+
+.lol {
+    background-color: blue;
+    height: 1000px;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.navbar-nav {
+    text-transform: uppercase;
+}
+
+#navbar-title {
+    display: inline-block;
+    font-size: 3rem;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+.navbar-title {
+    color: white;
+}
