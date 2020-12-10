@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" href="dist/main.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap" rel="stylesheet">
 
 </head>
 
@@ -55,10 +55,10 @@
 
     <main>
         <div class="drinks">
-            <div class="recipes">
+            <div class="recipes" id="recipes">
                 <div class="container">
                     <div class="text-center">
-                        <h2 class="title">nos recettes</h2>
+                        <h2 class="title title--section">nos recettes</h2>
                     </div>
                     <div class="row">
                         <div class="col">
@@ -87,12 +87,12 @@
                         <li class="col-12 col-lg">
                             <div class="drinks-card drinks-card--green">
                                 <div class="drinks-card-header">
-                                    <h3 class="title-card">Original</h3>
+                                    <h3 class="title-card">Mojito</h3>
                                     <figure class="drinks-icon-container">
                                         <img class="drinks-icon" src="dist/assets/images/energizing.svg" alt="">
                                     </figure>
                                 </div>
-                                <p class="drinks-paragraph">Boisson énergisante gazeuse, à la taurine et chargée en caféine</p>
+                                <p class="drinks-paragraph">Boisson énergisante gazeuse, saveur mojito à la caféine et sans alcool.</p>
                                 <div class="drinks-card-footer">
                                     <button class="button">Plus d'infos</button>
                                     <a class="link-selection">Sélectionner</a>
@@ -102,12 +102,12 @@
                         <li class="col-12 col-lg">
                             <div class="drinks-card drinks-card--orange">
                                 <div class="drinks-card-header">
-                                    <h3 class="title-card">Original</h3>
+                                    <h3 class="title-card">Tropical</h3>
                                     <figure class="drinks-icon-container">
-                                        <img class="drinks-icon" src="dist/assets/images/energizing.svg" alt="">
+                                        <img class="drinks-icon" src="dist/assets/images/cooling.svg" alt="">
                                     </figure>
                                 </div>
-                                <p class="drinks-paragraph">Boisson énergisante gazeuse, à la taurine et chargée en caféine</p>
+                                <p class="drinks-paragraph">Boisson énergisante gazeuse, aux fuits, taurine, caféine et extrait de gingembre.</p>
                                 <div class="drinks-card-footer">
                                     <button class="button">Plus d'infos</button>
                                     <a class="link-selection">Sélectionner</a>
@@ -116,7 +116,101 @@
                         </li>
                     </ul>
                 </div>
+                <div class="choice">
+                    <div class="text-center">
+                        <h2 class="title-choice">Votre choix:</h2>
+                        <p>Boisson sélectionnée</p>
+                        <p id="choicetext">Mojito</p>
+                    </div>
+                </div>
            </div>
+           <div class="references" id="references">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="title title--section">Nos références</h2>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md">
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="title title__ref">Cafés, hôtels, restaurants</h3>
+                                </div>
+                                <div class="col ref-col-can">
+                                    <figure>
+                                        <img src="dist/assets/images/references/chr.png" alt="">
+                                    </figure>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md">
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="title title__ref">Marques</h3>
+                                </div>
+                                <div class="col ref-col-can">
+                                    <figure>
+                                        <img src="dist/assets/images/references/marques.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md">
+                            <div class="row">
+                                <div class="col">
+                                    <h3 class="title title__ref">Associations, écoles</h3>
+                                </div>
+                                <div class="col ref-col-can">
+                                    <figure>
+                                        <img src="dist/assets/images/references/asso.png" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-8 offset-lg-2 col-xl-6 offset-xl-3">
+                            <div class="copyright-col">
+                                <div class="text-center">
+                                    <p>Toutes les marques déposées ou non déposées citées dans ce document sont la proprété exclusives de leur détenteurs respectifs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-10 offset-lg-1">
+                            <div class="row">
+                                <div class="col-12 col-md">
+                                    <h3 class="title title__ref title__ref--pub">Publicités par l'objet</h3>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <div class="col ref-col-can">
+                                        <figure>
+                                            <img src="dist/assets/images/references/pub1.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <div class="col ref-col-can">
+                                        <figure>
+                                            <img src="dist/assets/images/references/pub2.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md">
+                                    <div class="col ref-col-can">
+                                        <figure>
+                                            <img src="dist/assets/images/references/pub3.png" alt="">
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </main>
 

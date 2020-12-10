@@ -4,17 +4,48 @@
     .title{
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 2.4rem;
-        letter-spacing: .5rem;
-        margin: 0 0 4.5rem 0;
-
-        &-card{
-            font-family: 'gilroy';
+        font-size: 1.8rem;
+        margin: 0;
+        
+        &-card{  
             letter-spacing: .1rem;
-            font-size: 2.8rem;
+            font-size: 3rem;
             padding-bottom: .6rem;
             margin: 0;
+            
+        }
+        
+        &--section{
+            font-family: 'gilroy';
+            font-size: 2.2rem;
+            letter-spacing: .8rem;
+            margin: 0 0 4.5rem 0;
+        }
 
+        &-choice{
+            font-size: 2.4rem;
+            margin-bottom: 1rem;
+        }
+
+        &__ref{
+            padding: .5rem 0;
+            position: relative;
+
+            &::after{
+                position: absolute;
+                display: block;
+                content: "";
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                left: 0;
+                background-color: black;
+            }
+
+            &--pub{
+                margin-bottom: 2rem;
+            }
+            
         }
     }
 
@@ -22,7 +53,7 @@
         border: none;
         text-transform: uppercase;
         border-radius: 2rem;
-        font-size: 1rem;
+        font-size: 1.3rem;
         color: white;
         background-color: rgba(0,0,0,.2);
         padding: .8rem 1rem;
@@ -31,11 +62,12 @@
             background-color: $grey-light;
             color:$grey-dark;
             font-size: 1.6rem;
-
         }
     }
 
     &-card{
+        margin-bottom: 2.5rem;
+
         &--red{
             @include drinks-card($drinks-red);
         }
@@ -48,8 +80,17 @@
             @include drinks-card($drinks-orange);
         }
 
+        
+
         &-container{
             margin: 5rem 0 8rem;
+            
+            & li:last-child{
+                .drinks-card{
+                    margin: 0;
+                }
+            }
+            
         }
 
         &-header{
@@ -94,8 +135,39 @@
 
     .link-selection{
         text-transform: uppercase;
+        text-decoration: none;
+        cursor: pointer;
         color: white;
-        font-size: 1rem;
+        font-size: 1.4rem;
+    }
+
+
+    .choice{
+        background-color: $grey-light;
+        padding: 7rem 0 5rem;
+
+        & p{
+            font-size: 1.4rem;
+            margin: 0;
+        }
+    }
+
+
+    .references{
+        padding: 3rem 0;
+
+        .ref-col-can{
+            padding: 0;
+        }
+
+
+        .copyright-col{
+            margin: 3rem 0;
+
+            & p{
+                margin: 0;
+            }
+        }
     }
 
 }
@@ -106,12 +178,76 @@
 @media screen and (min-width: 768px){
     .drinks{
         margin: 15rem 0 6rem;
-    
+
         .title{
-            font-size: 6.5rem;
+            &--section{
+                font-size: 4rem;
+            }
+        }
+
+        .button{
+            &--choice{
+                border-radius: 3rem;
+                padding: 1.2rem 2rem;
+            }
+        }
+
+        .references{
+            padding-top: 6rem;
+
+            .copyright-col{
+                margin: 2.5rem 0 3rem 0;
+            }
         }
     }
 }
 
+@media screen and (min-width: 992px){
+    .drinks{
+        .title{
+            &--section{
+                font-size: 6rem;
+            }
+        }
 
-// titilium web
+        .button{
+            transition: background-color .4s ease,
+                        color .4s ease;
+
+            &:hover{
+                background-color: #fff;
+                color:black;
+            }
+
+            &--choice{
+                &:hover{
+                    background-color: $grey-dark;
+                    color:$grey-light;
+                }   
+            }
+        }
+
+        .link-selection{
+            position: relative;
+
+            &::after{
+                background-color: white;
+                position: absolute;
+                display: block;
+                content: "";
+                left: 0;
+                bottom: 0;
+                // margin-top: .5rem;
+                height: .1rem;
+                width: 0%;
+                transition: width .3s ease;
+            }
+
+            &:hover{
+                &::after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
