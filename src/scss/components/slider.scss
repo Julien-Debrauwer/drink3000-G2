@@ -1,2 +1,11 @@
 .slider {
+  li {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+  }
+
+  .carousel-item {
+    width: 100%;
+  }
 }
